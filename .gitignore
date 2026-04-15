@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+# v0 sandbox internal files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+.snowflake/
+.v0-trash/
+.vercel/
+next.user-config.*
+
+# Environment variables
+.env*.local
+
+# Common ignores
+node_modules
+.next/
+.DS_Store
+=======
+venv/
+shape_predictor_model/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.dll
+>>>>>>> cbda8563295579b4d579e70da17463c7d46d3bf2

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Online Proctoring System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #4b0082;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .start { background: #22c55e; color: white; }
+        .stop { background: #ef4444; color: white; }
+
+        a {
+            display: block;
+            margin-top: 30px;
+            color: #38bdf8;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Scrollable if content is long */
+        .scroll-area {
+            max-height: 80vh;
+            overflow-y: auto;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container scroll-area">
+        <h1>🎓 Enhanced AI Proctoring Using Deep Learning For Online Exam Monitoring</h1>
+        <p>Face • Eye • Head Pose • Object Detection</p>
+
+        <!-- Replace the laptop image with your uploaded image -->
+        <img src="{{ url_for('static', filename='images/proctoring_image.png') }}" alt="Proctoring Image">
+
+
+        <!-- Buttons below the image -->
+        <div>
+            <button class="start" onclick="fetch('/start')">Start Exam</button>
+            <button class="stop" onclick="fetch('/stop')">Stop Exam</button>
+        </div>
+
+        <!-- Activity log -->
+        <a href="/logs">View Activity Logs</a>
+    </div>
+</body>
+</html>
